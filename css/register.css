@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.bground{
+  width: 100%;
+  height: 100vh;
+  /* background-color: blue; */
+  /* pad */
+}
+.login-con{
+  width: 100%;
+  height: 100vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+}
+.login-form{
+  width: 40%;
+  height: auto;
+  /* background-color: purple; */
+  border-radius: 10px;
+  padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login-icon{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  /* background: green; */
+}
+.form-input{
+  padding: 30px 0;
+  width: 100%;
+  height: auto;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+}
+#email{
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0fd7ff;
+  border-radius: 5px;
+}
+#nama{
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0fd7ff;
+  border-radius: 5px;
+}
+#aff{
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0fd7ff;
+  border-radius: 5px;
+}
+#pass{
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0fd7ff;
+  border-radius: 5px;
+}
+#hp{
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0fd7ff;
+  border-radius: 5px;
+}
+#register{
+  float: right;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0fd7ff;
+  color: white;
+}
+/* responsive */
+@media screen and (max-width:1240px){
+  .login-form{
+    width: 60%;
+  }
+}
+@media screen and (max-width:1010px){
+  .login-form{
+    width: 90%;
+  }
+}
