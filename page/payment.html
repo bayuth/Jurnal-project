@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
   <link href="../css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dropdown.css">
 </head>
 
 <body>
@@ -45,13 +46,13 @@
               <p>User Profile</p>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="./user.html">
               <i class="material-icons">content_paste</i>
               <p>Submission</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="./user.html">
               <i class="material-icons">attach_money</i>
               <p>Payment</p>
@@ -91,71 +92,79 @@
         <div class="container-fluid">
           <!-- your content here -->
             <div class="row">
-              <div class="col-md-11">
+              <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Journal Submission</h4>
+                  <h4 class="card-title">Payment</h4>
                   <!-- <p class="card-category">Complete your profile</p> -->
                 </div>
                 <div class="card-body">
                   <form action="">
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group bmd-form-group">
-                          <!-- <label class="bmd-label-floating">Title</label> -->
-                          <input type="text" class="form-control" placeholder="Title">
+                      <div class="col-md-4">
+                        <!-- <h4>Judul Jurnal</h4> -->
+                        <div class="select-box">
+                          <div class="options-container">
+                            <div class="option">
+                              <input type="radio" class="radio" id="automobiles" name="category" value="">
+                              <label for="automobiles">Jurnal 1</label>
+                            </div>
+                            <div class="option">
+                              <input type="radio" class="radio" id="automobiles" name="category"value="">
+                              <label for="automobiles">Jurnal 2</label>
+                            </div>
+                            <div class="option">
+                              <input type="radio" class="radio" id="automobiles" name="category"value="">
+                              <label for="automobiles">Jurnal 3</label>
+                            </div>
+
+                          </div>
+
+                          <div class="selected">
+                            Judul jurnal
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group bmd-form-group">
-                          <!-- <label class="bmd-label-floating">Title</label> -->
-                          <input type="text" class="form-control" placeholder="Author">
-                        </div>
-                      </div>
-                    </div>
+
                     <div class="row">
                       <div class="col-md-4">
+                        <!-- <h4>Judul Jurnal</h4> -->
+                        <div class="select-box2">
+                          <div class="options-container2">
+                            <div class="option2">
+                              <input type="radio" class="radio2" id="automobiles" name="umum" value="">
+                              <label for="automobiles">Umum</label>
+                            </div>
+                            <div class="option2">
+                              <input type="radio" class="radio2" id="automobiles" name="s1"value="">
+                              <label for="automobiles">Mahasiswa S1</label>
+                            </div>
+                            <div class="option2">
+                              <input type="radio" class="radio2" id="automobiles" name="s2"value="">
+                              <label for="automobiles">Mahasiswa S2</label>
+                            </div>
 
-                        <div class="dropdown">
-                          <select class="btn btn-secondary ">
-                            <option value="">Pilih jenis jurnal</option>
-                            <option  class="dropdown-item"value="volvo">Jurnal 1</option>
-                            <option  class="dropdown-item"value="volvo">Jurnal 2</option>
-                            <option  class="dropdown-item"value="volvo">Jurnal 3</option>
+                          </div>
 
-                          </select>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <!-- <label>About Me</label> -->
-                          <div class="form-group bmd-form-group">
-                            <!-- <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label> -->
-                            <textarea class="form-control" rows="5" placeholder="Abstract"></textarea>
+                          <div class="selected2">
+                            Kategori
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-4">
-                          <label for="">select File:</label>  <input type="file" name="file" value="">
+                      <div class="col-md-6">
+                        <div class="form-group bmd-form-group">
+                          <!-- <label class="bmd-label-floating">Title</label> -->
+                          <input type="number" class="form-control" placeholder="Nominal biaya (Rp)" disabled>
+                        </div>
                       </div>
                     </div>
 
                     <div class="row">
                       <div class="col-md-4">
-                        <label style="margin-top:30px; font-size:20px;">Media : </label>
-                        <div class="form-group bmd-form-group">
-                          <!-- <label class="bmd-label-floating">Title</label> -->
-                          <input type="radio" id="oral" name="oral" value="oral"> <label for="">Oral</label> <br>
-                          <input type="radio" id="poster"name="poster" value="poster"> <label for="">Poster</label>
-                        </div>
+                          <label for="">Upload bukti pembayaran:</label>  <input type="file" name="file" value="" >
                       </div>
                     </div>
 
@@ -166,7 +175,59 @@
               </div>
             </div>
 
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-info">
+                  <h4 class="card-title ">Daftar Bank</h4>
+
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <tr><th>
+                          ID
+                        </th>
+                        <th>
+                          Bank
+                        </th>
+                        <th>
+                        No. Rek
+                        </th>
+                        <th>
+                          Atas Nama
+                        </th>
+                      </tr></thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            BBA
+                          </td>
+                          <td>
+                            123456789098
+                          </td>
+                          <td>
+                            JOURNAL BOS
+                          </td>
+
+                        </tr>
+                        <tr>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
+
+          </div>
         </div>
       </div>
       <footer class="footer">
@@ -195,6 +256,8 @@
 </body>
 
 <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+<script src="../js/dropdown.js" type="text/javascript"></script>
 <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
 <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
