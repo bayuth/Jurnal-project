@@ -106,7 +106,7 @@
                 <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="dashboard.html">
                 <span class="menu-title">Profil</span>
                 <i class="mdi mdi-account menu-icon"></i>
@@ -131,7 +131,7 @@
                 <i class="mdi mdi-cash-multiple menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="chpass.html">
                 <span class="menu-title">Change Password</span>
                 <i class="mdi mdi-key-variant menu-icon"></i>
@@ -144,43 +144,29 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-md-4">
-                <div class="card2 card2-profile">
-                  <div class="card2-avatar">
-                    <a href="javascript:;">
-                      <img src="../img/faces/face1.jpg" alt="profile">
-                    </a>
-                  </div>
-                  <div class="card2-body">
-                    <h6 class="card2-category text-gray">CEO / Co-Founder</h6>
-                    <h4 class="card2-title">David Grey H.</h4>
-                    <p class="card2-description">
-                      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                    </p>
-                    <a href="editprofile.html" class="btn btn-primary btn-round">Edit Profile</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8">
+              <div class="col-12 grid-margin stretch-card">
                 <div class="card2">
                   <div class="card2-header card2-header-primary">
-                    <h3 class="card2-title">Profile</h3>
+                    <h3 class="card2-title">Edit Profile</h3>
                   <!-- <p class="card-category">Complete your profile</p> -->
                   </div>
-                  <div class="card2-body">
-                    <label for="">Name : </label> <br class="br"> <br>
-                    <h4>Lucas Vazquez</h4> <br>
-                    <label for="">Email : </label><br class="br"> <br>
-                    <h4>Vazquez@mail.com</h4> <br>
-                    <label for="">Affiliation : </label><br class="br"> <br>
-                    <h4>Michigan University</h4><br>
-                    <label for="">Phone Number : </label><br class="br"><br>
-                    <h4>01234567890</h4>
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputPassword4">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword4">Repeat Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                      </div>
+
+                      <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                      <button class="btn btn-light">Cancel</button>
+                    </form>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
           </div>

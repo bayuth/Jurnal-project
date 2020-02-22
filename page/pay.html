@@ -144,43 +144,58 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-md-4">
-                <div class="card2 card2-profile">
-                  <div class="card2-avatar">
-                    <a href="javascript:;">
-                      <img src="../img/faces/face1.jpg" alt="profile">
-                    </a>
-                  </div>
-                  <div class="card2-body">
-                    <h6 class="card2-category text-gray">CEO / Co-Founder</h6>
-                    <h4 class="card2-title">David Grey H.</h4>
-                    <p class="card2-description">
-                      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                    </p>
-                    <a href="editprofile.html" class="btn btn-primary btn-round">Edit Profile</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8">
+              <div class="col-12 grid-margin stretch-card">
                 <div class="card2">
                   <div class="card2-header card2-header-primary">
-                    <h3 class="card2-title">Profile</h3>
+                    <h3 class="card2-title">New Submission</h3>
                   <!-- <p class="card-category">Complete your profile</p> -->
                   </div>
-                  <div class="card2-body">
-                    <label for="">Name : </label> <br class="br"> <br>
-                    <h4>Lucas Vazquez</h4> <br>
-                    <label for="">Email : </label><br class="br"> <br>
-                    <h4>Vazquez@mail.com</h4> <br>
-                    <label for="">Affiliation : </label><br class="br"> <br>
-                    <h4>Michigan University</h4><br>
-                    <label for="">Phone Number : </label><br class="br"><br>
-                    <h4>01234567890</h4>
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputCity1">Title</label>
+                        <input type="text" class="form-control" id="exampleInputCity1" placeholder="Title">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelectGender">Type</label>
+                        <select class="form-control" id="exampleSelectGender">
+                          <option value="">Select Type</option>
+                          <option value="student">Student</option>
+                          <option value="akademik">Akademik</option>
+                          <option value="industry">Industry</option>
+                          <option value="inter">International</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelectGender">Payment Method</label>
+                        <select class="form-control" id="exampleSelectGender">
+                          <option value="">Selct Payment Method</option>
+                          <option value="1">Bank Transfer</option>
+                          <option value="2">Cash</option>
+
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputCity1">Contibution fee</label>
+                        <input type="text" class="form-control" id="exampleInputCity1" placeholder="Title" disabled>
+                      </div>
+                      <div class="form-group">
+                        <label>Upload Payment Receipt</label>
+                        <input type="file" name="file" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload image">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                          </span>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                      <button class="btn btn-light">Cancel</button>
+                    </form>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
           </div>
